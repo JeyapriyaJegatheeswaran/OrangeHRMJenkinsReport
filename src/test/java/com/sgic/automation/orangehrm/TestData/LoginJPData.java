@@ -27,5 +27,4 @@ public class LoginJPData extends ExcelDataConfig {
         }
         return data;
     }
-
 }
