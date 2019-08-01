@@ -59,6 +59,8 @@ public class TestBase extends PageBase {
         LOGGER.info("Closing Browser");
         PageBase.closeDriver();
         LOGGER.info("Browser Closed");
+        SendMail.SendEmail();
+        extentReport.flush();
 
 
     }
@@ -71,10 +73,9 @@ public class TestBase extends PageBase {
 
     //report generation
 
-    @AfterSuite
-    public void cleanUp() throws Exception {
-        SendMail.SendEmail();
-        extentReport.flush();
-
-    }
+//    @AfterSuite
+//    public void cleanUp() throws Exception {
+//
+//
+//    }
 }
