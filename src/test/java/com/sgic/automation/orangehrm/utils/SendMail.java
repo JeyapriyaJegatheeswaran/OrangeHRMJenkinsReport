@@ -113,7 +113,7 @@ public class SendMail extends TestBase{
 
             message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("jp.jen123@gmail.com"));
 
-           
+
 
 
 
